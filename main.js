@@ -5,22 +5,38 @@
 //          PART ONE
 // ***************************
 // Write a JavaScript program to display the current day and time, start with:
-console.log(new Date)
 
-const displayDate = () => {
+const displayDate = () => 
+{
+  // console.log(new Date)
   const currentDate = new Date()
-
   document.getElementById("display-element").innerHTML = currentDate;
 }
- 
+
+const date = new Date();
+
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+
+let currentDate = `${month}-${day}-${year}`;
+console.log(currentDate);
+
 
 // Write a JavaScript program to convert a number to a string.
 
+const numberToString = (inputNum) => 
+{
+  console.log("My favorite number is: " + inputNum.toString())
+}
+
+numberToString(7)
 
 
 // Write a JavaScript program to convert a string to the number.
 
-
+// document.getElementById("stn").innerHTML =
+// Number("67.89");
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
   // * Boolean
@@ -30,14 +46,19 @@ const displayDate = () => {
   // * NaN
   // * String
   
-
+console.log('typeof true is a', typeof true);
+console.log('typeof 6113 is a', typeof 6113);
+console.log('typeof "Goblins Rule" is a', typeof "Goblins Rule")
+console.log('typeof undefined is', typeof undefined);
   
 // Write a JavaScript program that adds 2 numbers together.
 
+let num1 = 4889
+let num2 = 5741
 
+console.log('4889 + 5741 = ', num1 + num2);
 
 // Write a JavaScript program that runs only when 2 things are true.
-
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
